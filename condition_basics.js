@@ -49,26 +49,62 @@
 //     console.log("you can't vote");
 // }
 
-let marks= 20;
-if (marks >=90){
-    console.log("A+");
-}else if(marks>=75){
-console.log("B+");
-}else if(marks>=50){
-    console.log("C+");
-}else if(marks>=30){
-    console.log("D+");
-}else if(marks<30){
-    console.log("F+");
+
+// if (marks >=90){
+//     console.log("A+");
+// }else if(marks>=75){
+// console.log("B+");
+// }else if(marks>=50){
+//     console.log("C+");
+// }else if(marks>=30){
+//     console.log("D+");
+// }else if(marks<30){
+//     console.log("F+");
+// }
+
+
+// let month = "July";
+
+// if(month ==="january"){
+//     console.log("winter trends");
+// }else if(month ==="April"){
+//     console.log("Summer trends starts");
+// }else if(month ==="July"){
+//     console.log("Rainy trends");
+// }
+
+
+// let size="S" ;
+
+// if(size === "xl"){
+//     console.log(`price is :${250}`);
+// }
+// else if(size === "l"){
+// console.log(`price is :${180}`);
+// }
+// else if(size === "M"){
+//     console.log(`price is : ${100}`);
+// }else if(size === "S"){
+//     console.log(`price is : ${80}`);
+// }
+
+// else{
+//     console.log("Order nothing");
+// }
+
+let marks= 80;
+if (marks >=35){
+    if(marks>50){
+        console.log("Good");
+        if (marks <= 50) {
+            console.log("Averge");
+        }
+    }
+    
+    else {
+        console.log("needs efforts");
+    }
 }
-
-
-let month = "July";
-
-if(month ==="january"){
-    console.log("winter trends");
-}else if(month ==="April"){
-    console.log("Summer trends starts");
-}else if(month ==="July"){
-    console.log("Rainy trends");
+else{
+    console.log("better luck next time!");
 }
