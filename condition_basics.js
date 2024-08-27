@@ -92,19 +92,59 @@
 //     console.log("Order nothing");
 // }
 
-let marks= 80;
-if (marks >=35){
-    if(marks>50){
-        console.log("Good");
-        if (marks <= 50) {
-            console.log("Averge");
-        }
-    }
+// let marks= 80;
+// if (marks >=35){
+//     if(marks>50){
+//         console.log("Good");
+//         if (marks <= 50) {
+//             console.log("Averge");
+//         }
+//     }
     
-    else {
-        console.log("needs efforts");
-    }
-}
-else{
-    console.log("better luck next time!");
-}
+//     else {
+//         console.log("needs efforts");
+//     }
+// }
+// else{
+//     console.log("better luck next time!");
+// }
+
+
+// let marks =35;
+
+// if((marks>36 && marks<=100) || !false){
+//     console.log("Student pass");
+// }else{
+//     console.log("student fail");
+// }
+
+
+// let str='appple';
+
+// if((str[0]==='a')&&(str.length>3)){
+//     console.log("A Good string");
+// }
+// else{
+//     console.log("A Bad string");
+// }
+
+// let element  = "Fir";
+// switch(element){
+//     case "water" :
+//     console.log("Water element");
+//     break;
+
+//     case "Fire":
+//         console.log("Fire element");
+//         break;
+
+//     case "Earth":
+//         console.log("Earth element");
+//         break;
+//     case "Air":
+//         console.log("Air element");
+//         break;
+
+//     default:
+//         console.log("None Element");
+// }
