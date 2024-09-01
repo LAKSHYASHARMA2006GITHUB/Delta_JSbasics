@@ -148,3 +148,7 @@
 //     default:
 //         console.log("None Element");
 // }
+
+
+let prom = prompt("enter your name:");
+console.log(prom);
