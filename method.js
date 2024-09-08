@@ -10,7 +10,7 @@
 
 
 let msg ="Apnacollege";
-let newMsg = msg.slice(4,9);
+let newMsg = msg.slice(4,11);
 console.log(newMsg);
 
 // let svg = "my";
