@@ -30,15 +30,22 @@
 // }
 
 // while loop
-const movie = "avtar";
-let guess = prompt("enter the movie in your guess");
+// const movie = "avtar";
+// let guess = prompt("enter the movie in your guess");
 
-while ((guess != movie) && (guess != "quit")) {
-   guess =  prompt("wrong movie take another guess:");
-}
+// while ((guess != movie) && (guess != "quit")) {
+//    guess =  prompt("wrong movie take another guess:");
+// }
 
-if(guess ==  movie){
-    console.log("you guess write!");
-}else if(guess == "quit"){
-    console.log("you quit the game");
+// if(guess ==  movie){
+//     console.log("you guess write!");
+// }else if(guess == "quit"){
+//     console.log("you quit the game");
+// }
+
+//loops with array
+
+let fruits =["mango","orange","strawberry","litchi","pineapple"];
+for(let i=0;i<fruits.length;i++){
+    console.log(i,fruits[i]);
 }
