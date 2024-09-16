@@ -45,7 +45,66 @@
 
 //loops with array
 
-let fruits =["mango","orange","strawberry","litchi","pineapple"];
-for(let i=0;i<fruits.length;i++){
-    console.log(i,fruits[i]);
-}
+// let fruits =["mango","orange","strawberry","litchi","pineapple"];
+// fruits.push("apple");
+// fruits.unshift("blackberry");
+// for(let i=0;i<fruits.length;i++){
+//     console.log(i,fruits[i]);
+// }
+// console.log("\n")
+// for (let i = fruits.length-1; i >= 0; i--){
+//     console.log(i, fruits[i]);
+// }
+
+
+// let heros = [["ironman","hulk","captionAmerica","thor"],
+// ["batman","superman","flash","wonderwomen"]];
+// for(let i=0;i<heros.length;i++){
+//     console.log(`list ${i}`);
+//     for(let j=0;j<heros[i].length;j++){
+//         console.log(j,heros[i][j]);
+//     }
+// }
+// for of loop;
+// let parts = ["brain","chest","biceps","triceps","abs","lats"];
+// for(part of parts){
+//     console.log(part);
+// }
+
+// nested for of loop
+
+// let todo = []
+// let req = prompt("please enter your request");
+
+// while (true) {
+//     if (req == "quit") {
+//         console.log("game quitted");
+//         break;
+//     }
+
+//     if (req == "list") {
+//         console.log("--------------");
+//         for (let i = 0; i < todo.length; i++) {
+//             console.log(i, todo[i])
+//         }
+//         console.log("--------------");
+//     }
+
+//     if (req == "add") {
+//         let task = prompt("enter the request you want to :");
+//         todo.push(task);
+//         console.log("task added");
+//     }
+//     else if (req == "delete") {
+//         let idx = prompt("enter the task name you want to delete")
+//         todo.splice(idx, 1);
+//         console.log("task deleted");
+//     }
+//     else{
+//         console.log("wrong request");
+//     }
+//    req =  prompt("please enter your request");
+   
+// }
+
+
