@@ -104,3 +104,17 @@ console.log(aoo[1].marks);
 aoo[1].marks = 96;
 console.log(aoo[1].marks);
 console.log(aoo);
+
+
+let num = -12.32;
+let num1 = 12.00001;
+console.log(Math.abs(num)) ;
+console.log(Math.pow(2,24));
+console.log(Math.floor(num));
+console.log(Math.ceil(num1));
+console.log(Math.random());
+console.log(Math.floor(Math.random() * 10) ); //here 10 not be came because 
+//because of the range of the randon are 0 to 1 and 1 not include in it.
+console.log(Math.floor(Math.random()*10)+1);
+console.log(Math.floor(Math.random() * 100) + 1);
+console.log(Math.floor(Math.random() * 5) + 21);
