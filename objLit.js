@@ -118,3 +118,27 @@ console.log(Math.floor(Math.random() * 10) ); //here 10 not be came because
 console.log(Math.floor(Math.random()*10)+1);
 console.log(Math.floor(Math.random() * 100) + 1);
 console.log(Math.floor(Math.random() * 5) + 21);
+
+// guess game
+let gmax = prompt("enter the max limit of the number");
+let random = Math.floor(Math.random()* gmax)+1;
+let guess = prompt("Hey user! enter the number!");
+
+while(true){
+    if(guess == "quit"){
+        console.log("game quitted");
+        break;
+    }
+
+    if(guess  == random){
+        console.log("write guess! congrats!");
+        break;
+    }
+    else if (guess < random){
+        guess = prompt("guess if two short ! just do it!")
+    }
+    else if(guess > random){
+        guess = prompt("guess if two long ! just do it!");
+    }
+    
+}
