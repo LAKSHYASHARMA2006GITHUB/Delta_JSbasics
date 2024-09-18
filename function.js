@@ -146,7 +146,7 @@ let greet = function(){
 
 multiplegreet(greet,120);
 
-// evenoddfactory
+// evenoddfactory  // example of the high order function
 function evenoddfactory(request){
     if(request == "odd"){
         return function(n){
