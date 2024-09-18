@@ -71,15 +71,97 @@ rollDice();
  console.log(N);
 
 
- let str = ["hi","hello","bye","!"];
+//  let str = ["hi","hello","bye","!"];
 
- function concat(str){
-    let result = "";
-    for(let i=0;i<str.length;i++){
-        result +=str[i];
+//  function concat(str){
+//     let result = "";
+//     for(let i=0;i<str.length;i++){
+//         result +=str[i];
+//     }
+//     return result;
+//  }
+
+// let res = concat(str);
+// console.log(res);
+
+
+let sum1 = 54;  //global scope=> use everywhere in the file .
+function add(){
+    let sum1 = a+b; //function scope => use only inside the function.
+    console.log(sum1);
+
+}
+
+console.log(sum1);
+
+
+let age = 24;
+if(age>18){
+    let str = "adult";  // block scope
+}
+//  console.log(str);  // this is not print because of this in not inside the block scope
+
+
+function out(){
+    let x = "my name is laskya";
+    let y = "Her name is shruti";
+
+    function inn(){  //lexical scope =>used the variables which is pre declared before
+                      // the function.
+        console.log(x);
+        console.log(y);
     }
-    return result;
- }
+ inn();
+}
 
-let res = concat(str);
-console.log(res);
+let o = out();
+console.log(o)
+
+
+
+//function expression as variable
+ 
+// let sum = function (a,b){
+//     return a+b;
+// }
+
+let helloo = function(){
+    console.log("helloo");
+}
+
+console.log(helloo);
+console.log(helloo());
+
+//higher order function
+
+function multiplegreet(func,count){
+    for(let i=1; i<=count;i++){
+        func();
+    }
+}
+
+let greet = function(){
+    console.log("hello");
+}
+
+multiplegreet(greet,120);
+
+// evenoddfactory
+function evenoddfactory(request){
+    if(request == "odd"){
+        return function(n){
+            console.log(!(n%2==0));
+        }
+    }
+    else if(request== "even"){
+        return function(n){
+            console.log(n % 2 == 0)
+        }
+       
+    }
+    else{
+        console.log("wrong request");
+    }
+}
+let request = "odd";
+console.log(evenoddfactory(request));   
