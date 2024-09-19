@@ -1,3 +1,4 @@
+// Basic function
 function hello(){
     console.log("hi i am lakshya sharma!")
 }
@@ -84,7 +85,7 @@ rollDice();
 // let res = concat(str);
 // console.log(res);
 
-
+//Scope🔍🔍
 let sum1 = 54;  //global scope=> use everywhere in the file .
 function add(){
     let sum1 = a+b; //function scope => use only inside the function.
@@ -165,3 +166,20 @@ function evenoddfactory(request){
 }
 let request = "odd";
 console.log(evenoddfactory(request));   
+
+//Methods 
+const calculator = {
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul: function(a,b){
+        return a*b;
+    }
+}
+
+console.log(calculator.add(1,2));
+console.log(calculator.sub(3, 2));
+console.log(calculator.mul(1, 2));
