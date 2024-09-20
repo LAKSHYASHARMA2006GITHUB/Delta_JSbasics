@@ -100,15 +100,92 @@ console.log(multi(2,3));
 // console.log(students.getInfo2()); 
 
 
-let square = (n)=>  n*n;
+// let square = (n)=>  n*n;
 
 
-console.log(square(2));
+// console.log(square(2));
 
-let id = setInterval(()=>{
-    console.log("hello world")
-},2000);
+// let id = setInterval(()=>{
+//     console.log("hello world")
+// },2000);
 
-setTimeout(()=>{
-    clearInterval(id);
-},11000)
+// setTimeout(()=>{
+//     clearInterval(id);
+// },11000)
+
+//Array methods
+
+let arr = [1,2,3,4,5];
+
+let print = function(el){
+   console.log(el)
+}
+
+arr.forEach(print);
+
+//compact form 
+console.log("\n")
+arr.forEach((el)=>{
+    console.log(el)
+})
+
+//forEach for arr of objects
+
+let stu = [
+    {
+        Name:"Lakshya",
+        marks:98
+    },{
+        Name: "Shruti",
+        marks: 97 
+    },
+    {
+        Name:"akshat",
+        marks:99
+    }
+]
+
+stu.forEach((stu)=>{
+    console.log(stu)
+console.log(stu.marks);
+})
+
+
+// Map
+let dou = stu.map((el)=>{
+    return el.marks;
+})
+
+let gpa = stu.map((el)=>{
+    return el.marks/10;
+})
+console.log(gpa);
+
+// every method
+
+let arra = [1,2,3,5,7,9];
+let even = arra.every((el)=>{
+return el%2 !=0
+})
+console.log(even)
+
+let finar = [1,2,3,4];
+
+let finalval = finar.reduce((res,el)=>{
+    console.log(res);
+    return res+el;
+})
+
+console.log(finalval);
+
+
+let max = finar.reduce((maxim,el)=>{
+    if(maxim<el){
+        return el
+    }
+    else{
+        return maxim
+    }
+})
+
+console.log(max);
