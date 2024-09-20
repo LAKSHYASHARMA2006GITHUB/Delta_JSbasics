@@ -57,11 +57,58 @@ console.log(multi(2,3));
 
 //setInterval
 
+// let id = setInterval(()=>{
+//     console.log("hi shruti");
+// },2000);
+
+
+// let id1 = setInterval(() => {
+//     console.log("hi Lakshya");
+// },3000);
+
+
+// let students ={
+//     name:"Aman",
+//     marks:95,
+//     age:24,
+//     getName: function(){
+//         console.log(this);// global scope
+//         return this.name;
+//     }
+//  ,
+//     getMarks:()=>{
+//      console.log(this); //parent scope of this function is ->window
+//   return this.marks;
+//     },
+//     getInfo: function (){
+//         setTimeout(()=>{  // arrow function prints the student object because his parent are normal function
+//             console.log(this);
+//         },2000)
+//     },
+
+//     getInfo2:function (){
+//         setTimeout(function(){ //  function prints who calls him
+//                                // so setTimeout calls him and it was the inbuilt function of the window object
+//             console.log(this);
+//         },2000)
+//     }
+// }
+
+// // console.log(students.getName());
+// // console.log(students.getMarks()); 
+// console.log(students.getInfo()); 
+// console.log(students.getInfo2()); 
+
+
+let square = (n)=>  n*n;
+
+
+console.log(square(2));
+
 let id = setInterval(()=>{
-    console.log("hi shruti");
+    console.log("hello world")
 },2000);
 
-
-let id1 = setInterval(() => {
-    console.log("hi Lakshya");
-},3000);
+setTimeout(()=>{
+    clearInterval(id);
+},11000)
