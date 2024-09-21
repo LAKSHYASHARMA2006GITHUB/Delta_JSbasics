@@ -218,9 +218,51 @@ return a+b;
 
 console.log(sums(1));
 
-//spread method in Js'
+//spread method in Js
 let arar =[1,2,4,6,3,8,4,2,6,8,5]
 console.log(...arar);
 console.log(Math.max(...arar));
 console.log(Math.min(...arar));
 console.log(..."lakshya");
+
+
+let odd = [1,3,5,7,9];
+let eve = [2,4,6,8,10];
+console.log(...odd ,  ...eve);
+
+
+//spread with the object literals
+const data = {
+    Email:"lakshyasharma11042006@gmail.com",
+    pass:"lkijda"
+}
+
+let datcpy = {...data,id:123,Name:"lakshya sharma"}
+console.log(data)
+console.log(datcpy);
+
+let rra = [1,2,3,4,5];
+let obj  = {...rra};
+console.log(obj)
+
+
+let obj1 = {..."hello"};
+console.log(obj1);
+
+//destructuing :Storing values of array into multiple variables.
+let players = ["tony","steve","ender","tourist","steven"];
+// multiple variables
+let[winner,runnerup,...others] = players;
+console.log(others);
+
+//destructuring with objects
+
+let folks ={
+    name:"lakshya",
+    age:24,
+    mobNO:9785554187,
+    username:"lakshya5727",
+    pass:"abcd"
+}
+
+let {username:user,pass:password}= folks;
