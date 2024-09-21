@@ -144,7 +144,7 @@ let stu = [
         marks:99
     }
 ]
-
+// array methods with functions
 stu.forEach((stu)=>{
     console.log(stu)
 console.log(stu.marks);
@@ -189,3 +189,38 @@ let max = finar.reduce((maxim,el)=>{
 })
 
 console.log(max);
+//questions 1
+let arrr = [-10,10,20,30,40,50];
+let nums3 = arrr.every((el)=>{
+    return (el%10 ==0); 
+})
+
+console.log(nums3);
+
+//questions 2
+
+let min = arrr.reduce((min,el)=>{
+     if(el<min){
+        return el;
+     }
+     else{
+        return min;
+     }
+})
+
+console.log(min);
+
+// defalit paramerters
+
+function sums (a,b=2){
+return a+b;
+}
+
+console.log(sums(1));
+
+//spread method in Js'
+let arar =[1,2,4,6,3,8,4,2,6,8,5]
+console.log(...arar);
+console.log(Math.max(...arar));
+console.log(Math.min(...arar));
+console.log(..."lakshya");
