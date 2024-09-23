@@ -1,6 +1,9 @@
 body {
   font-family: Arial;
 }
+.green{
+  color: rgb(9, 211, 59);
+}
 
 #mainImg {
   width: 35%;
