@@ -92,6 +92,40 @@ newhead.insertAdjacentElement('afterend', newbtn1);
 newbtn1.remove();
 
 
+//Q1
+let inp =  document.createElement("input");
+let btns = document.createElement("button");
+btns.innerText = "click me";
+inp.placeholder = "username";
+btns.setAttribute('id',"btn");
+console.log(btns.getAttribute('id'));
+
+
+let bd  = document.querySelector("body");
+bd.append(inp);
+bd.append(btns);
+
+let bg = document.querySelector("#btn");
+bg.classList.add("blue");
+
+//Q4
+let h1 = document.createElement('h1');
+h1.innerHTML = "<u>DOM Practice</u>";  //setting the underline
+h1.style.color= "purple" // adding color
+bd.append(h1);
+
+//Q5
+let p1 = document.createElement('p');
+let p2 = document.createElement('p')
+p1.innerHTML = "<p><b>hi i am lakshya sharma and i am a data analyist and MERN stack developer</b></p>"
+p2.innerHTML = "<p>Apna college <b>DELTA</b> practice</p>"
+bd.append(p1);
+bd.append(p2);
+
+
+
+
+
 
 
 
