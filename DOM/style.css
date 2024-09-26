@@ -1,6 +1,11 @@
 body {
   font-family: Arial;
 }
+.Box{
+  border: 2px solid black;
+  background-color: aqua;
+}
+
 .green{
   color: rgb(9, 211, 59);
 }
@@ -28,4 +33,9 @@ body {
 
 #description {
   background-color: antiquewhite;
+}
+
+#btn{
+  background-color: blue;
+  color: white;
 }
