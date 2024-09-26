@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    border: 2px solid black;
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    margin: auto 0px;
+}
