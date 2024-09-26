@@ -123,8 +123,18 @@ bd.append(p1);
 bd.append(p2);
 
 
+let div = document.createElement("div");
+let H1 = document.createElement("h1");
+let p = document.createElement("p");
 
+H1.innerHTML = "<h1>Hi i am the h1 tag</h1>";
+p.innerHTML = "<p>ME TOO!</p>";
+div.classList.add("Box") // IN the class list we add the name of the class that 
+// we created in the  style.css file
 
+div.append(H1);
+div.append(p);
+document.querySelector("body").append(div);
 
 
 
