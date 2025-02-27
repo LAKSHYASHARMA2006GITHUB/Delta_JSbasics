@@ -1,0 +1,50 @@
+.Body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.sai {
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    background-color: oldlace;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 90px;
+    margin: .3rem;
+
+}
+
+.blue {
+    background-color: blue;
+
+}
+
+
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+.yellow {
+    background-color: rgb(255, 242, 0);
+
+}
+
+.green {
+    background-color: rgb(36, 201, 3);
+
+}
+
+.flash {
+    background-color: white;
+}
