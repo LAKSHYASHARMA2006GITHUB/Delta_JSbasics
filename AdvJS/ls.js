@@ -46,29 +46,50 @@ h1 = document.querySelector("h1");
 function changeColor(color, delay) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
+            let num = Math.floor(Math.random()*10)+1;
+            if(num>3){
+                reject("error caught");
+            }
             h1.style.color = color;
             resolve("color changed successfully");
+            console.log(`color changed successfully to ${color}`);
         }, delay)
 
     })
 }
 
+
 // callback hell in javascript
-changeColor("red", 1000)
-.then(()=>{
-    console.log("red color was printed");
-    return changeColor("yellow",1000);
-})
-.then(()=>{
-    console.log("yellow color was printed");
-    return changeColor("green",1000);
-})
-.then(()=>{
-    console.log("green color was printed");
-})
-.catch(()=>{
-console.log("error occured");
-})
+async function demo() {
+    try{
+        await changeColor("red", 1000);
+        await changeColor("yellow", 1000);
+        await changeColor("green", 1000);
+        await changeColor("blue", 1000)
+    }
+    catch(error){
+        console.log("error caught",error);
+    }
+    let a = 5;
+    console.log(a);
+    
+}
+
+// changeColor("red", 1000)
+// .then(()=>{
+//     console.log("red color was printed");
+//     return changeColor("yellow",1000);
+// })
+// .then(()=>{
+//     console.log("yellow color was printed");
+//     return changeColor("green",1000);
+// })
+// .then(()=>{
+//     console.log("green color was printed");
+// })
+// .catch(()=>{
+// console.log("error occured");
+// })
 
 // changeColor("red", 1000, () => {
 //     changeColor("yellow", 1000, () => {
